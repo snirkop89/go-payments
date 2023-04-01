@@ -1,0 +1,19 @@
+{{template "base" .}}
+
+{{define "title"}}Payment Succeeded{{end}}
+
+{{define "content"}}
+{{with (index .Data "txn") }}
+    <h2 class="mt-5">Payment Succeeded</h2>
+    <hr>
+    <p>Payment Intent: {{.PaymentIntentID}}
+    <p>Customer Name: {{.FirstName}} {{.LastName}}
+    <p>Email: {{.Email}}
+    <p>Payment Method: {{.PaymentMethodID}}
+    <p>Payment Currency: {{.PaymentCurrency}}
+    <p>Payment Amount: {{.PaymentAmount | formatCurrency}}
+    <p>Last Four: {{.LastFour}}
+    <p>Bank Return Code: {{.BankReturnCode}}
+    <p>Expiry Date: {{.ExpiryMonth}}}/{{.ExpiryYear}}
+{{end}}
+{{end}}

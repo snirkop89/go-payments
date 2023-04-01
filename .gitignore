@@ -1,0 +1,12 @@
+.air.toml
+
+tmp/
+dist/
+
+migrations/
+
+# Docker volume folder
+db-data/
+
+# Environment file
+.envrc
