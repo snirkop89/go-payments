@@ -16,3 +16,7 @@ Based on [Building web application with go](https://www.udemy.com/course/buildin
 
 TODO:
 - [ ] Complete down migration where needed
+- [ ] Add tests
+- [ ] Add GitHub actions for CI/CD
+  - [ ] Use secrets
+  - [ ] go test
